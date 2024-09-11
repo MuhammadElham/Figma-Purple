@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter;
+}
+
+/* Navbar */
+.nav {
+    background-color: black;
+}
+.nav_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.logo img {
+    width: 38px;
+    height: 38px;
+}
+
+/* Element */
+.l_element {
+    border: 1px solid gray;
+    padding: 8px 40px;
+    border-radius: 18px;
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    column-gap: 4rem;
+}
+
+.navbar li {
+    list-style-type: none;
+}
+
+.navbar a,
+i {
+    font-size: 13px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Menu Icon */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    cursor: pointer;
+    z-index: 200;
+    transition: 0.3s;
+}
+
+.menu-icon div {
+    display: block;
+    background: red;
+    height: 2px;
+    width: 24px;
+    transition: 0.3s;
+}
+
+.move .line1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.move .line2 {
+    opacity: 0;
+}
+
+.move .line3 {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+/* button */
+.l_button button {
+    width: 109px;
+    height: 30px;
+    padding: 2px 15px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    background-color: #8C45FF;
+    cursor: pointer;
+}
+
+/* Media Query */
+@media(width < 775px) {
+    .menu-icon {
+        display: flex;
+    }
+}
