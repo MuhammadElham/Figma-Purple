@@ -565,6 +565,12 @@ input:checked+.slider:before {
     color: white;
 }
 
+/* Box 2 Shadow */
+#box2_shadow {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 211px 240px rgba(98, 42, 154, 0.6), 0 103px 58px rgba(96, 42, 154, 0.5), 0 4px 10px rgba(98, 42, 154, 0.6), 0 8px 15px rgba(96, 42, 154, 0.5), 0 12px 20px rgba(77, 55, 99, 0.4), 0 16px 49px rgba(255, 255, 258, -94.8);
+}
+
 .price_box1 button {
     width: 267px;
     height: 38px;
@@ -578,6 +584,12 @@ input:checked+.slider:before {
     font-weight: 400;
     transition: all 0.3s ease;
     cursor: pointer;
+}
+
+#purple_button {
+    background-color: #311264;
+    box-shadow: 0 -22px 81px rgba(98, 42, 154, 0.6), 0 -67px 47px rgba(96, 42, 154, 0.5), 0 13px 116px rgba(98, 42, 154, 0.6), 0 -13px 21px rgba(96, 42, 154, 0.5), 0 -1px 0px rgba(77, 55, 99, 0.4), 0 -95px 1px rgba(255, 255, 258, -94.8);
+
 }
 
 /* Footer */
@@ -628,6 +640,12 @@ input:checked+.slider:before {
 
 .foot_img img {
     width: 100%;
+}
+.client_img{
+    border: none;
+}
+.client_main_section .client_img img {
+    box-shadow: 0 41px 81px rgba(98, 42, 154, 0.6), 0 -72px 72px rgba(96, 42, 154, 0.5), 0 -34px 115px rgba(98, 42, 154, 0.6), 0 -6px 87px rgba(96, 42, 154, 0.5), 0 2px 63px rgba(77, 55, 99, 0.4), 0 -202px 8px rgba(255, 255, 258, -94.8);
 }
 
 /* Media Query  800 850 805 700 600 500 420*/
@@ -822,6 +840,8 @@ input:checked+.slider:before {
         text-align: center;
     }
 
+
+
     .client_center {
         margin-top: 50px;
     }
@@ -831,12 +851,7 @@ input:checked+.slider:before {
         height: 310px;
     }
 
-    /* .foot_a {
-        width: 100%;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    } */
+
 }
 
 @media(width < 500px) {
